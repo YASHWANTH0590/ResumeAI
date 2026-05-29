@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://airesumegenerator-ats.netlify.app/sitemap.xml
+
