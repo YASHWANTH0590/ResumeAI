@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - ResumeAI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+:root{
+  --black:#111111;
+  --gold:#c9a84c;
+  --light:#f3f1eb;
+}
+
+body{
+  font-family:'Times New Roman', Times, serif;
+  background:var(--light);
+  color:#111;
+}
+
+/* NAVBAR */
+
+nav{
+  height:60px;
+  background:#151515;
+  display:flex;
+  align-items:center;
+  padding:0 70px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+.logo{
+  color:var(--gold);
+  font-size:32px;
+  font-family:'DM Serif Display',serif;
+  margin-right:auto;
+}
+
+.nav-links{
+  display:flex;
+  gap:50px;
+  align-items:center;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.nav-links a:hover{
+  color:var(--gold);
+}
+
+/* HERO */
+
+.about-section{
+  max-width:1100px;
+  margin:auto;
+  padding:80px 40px;
+}
+
+.about-title{
+  font-size:50px;
+  font-family:'DM Serif Display',serif;
+  color:#111;
+  margin-bottom:30px;
+}
+
+.about-title span{
+  color:var(--gold);
+}
+
+.about-card{
+  background:white;
+  padding:50px;
+  border-radius:10px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.about-card p{
+  font-size:20px;
+  line-height:1.9;
+  color:#444;
+  margin-bottom:25px;
+}
+
+.highlight{
+  color:var(--gold);
+  font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+  background:#151515;
+  color:white;
+  padding:70px;
+  margin-top:60px;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+  gap:50px;
+  margin-bottom:50px;
+}
+
+.footer-logo{
+  font-size:30px;
+  color:var(--gold);
+  font-family:'DM Serif Display',serif;
+  margin-bottom:20px;
+}
+
+.footer-desc{
+  color:#aaa;
+  line-height:1.8;
+  max-width:400px;
+  font-size:15px;
+}
+
+.footer-col h4{
+  color:var(--gold);
+  margin-bottom:25px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.footer-col a{
+  display:block;
+  color:#ccc;
+  text-decoration:none;
+  margin-bottom:18px;
+}
+
+.footer-col a:hover{
+  color:var(--gold);
+}
+
+.footer-bottom{
+  border-top:1px solid #333;
+  padding-top:30px;
+  color:#777;
+  text-align:center;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    height:auto;
+    padding:20px;
+    gap:15px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+
+  .about-title{
+    font-size:38px;
+    text-align:center;
+  }
+
+  .about-card{
+    padding:30px;
+  }
+
+  .about-card p{
+    font-size:17px;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+  <div class="logo">ResumeAI</div>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="resume.html">Resume Builder</a>
+    <a href="ats.html">ATS Checker</a>
+    <a href="about.html">About</a>
+  </div>
+
+</nav>
+
+<section class="about-section">
+
+  <h1 class="about-title">
+    About <span>ResumeAI</span>
+  </h1>
+
+  <div class="about-card">
+
+    <p>
+      ResumeAI is an AI-powered platform designed to help students,
+      freshers, and professionals create modern ATS-friendly resumes
+      quickly and efficiently.
+    </p>
+
+    <p>
+      Our mission is to simplify the resume-building process using
+      Artificial Intelligence while improving job application success
+      through professional resume optimization.
+    </p>
+
+    <p>
+      ResumeAI offers powerful tools such as Resume Generation,
+      ATS Score Analysis, and AI-driven content suggestions to
+      help users stand out in today's competitive job market.
+    </p>
+
+    <p>
+      Developed and maintained by
+      <span class="highlight">G Yaswanth</span>.
+    </p>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+      <div class="footer-logo">ResumeAI</div>
+
+      <p class="footer-desc">
+        Build professional ATS-friendly resumes
+        using AI technology.
+      </p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Pages</h4>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume Builder</a>
+      <a href="ats.html">ATS Checker</a>
+      <a href="about.html">About Us</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="contact.html">Contact Us</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="mailto:ganugapatiyaswanth@gmail.com">
+        ganugapatiyaswanth@gmail.com
+      </a>
+      <a href="tel:+916303073312">
+        +91 6303073312
+      </a>
+      <span style="color:#ccc; display:block; margin-bottom:18px;">India</span>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 G Yaswanth. All Rights Reserved.
+  </div>
+
+</footer>
+
+</body>
+</html>
