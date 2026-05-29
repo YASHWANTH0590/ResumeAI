@@ -21,38 +21,58 @@ nav{
   height:60px;
   background:#151515;
   display:flex;
+  justify-content:space-between;
   align-items:center;
-  padding:0 70px;
+  padding:0 25px;
   position:sticky;
   top:0;
   z-index:1000;
 }
 
 .logo{
+  margin-right:auto;
+}
+ .logo{
   color:var(--gold);
   font-size:32px;
   font-family:'DM Serif Display',serif;
-  margin-right:auto;
 }
 
-.nav-links{
-  display:flex;
-  gap:50px;
-  align-items:center;
-}
+    .nav-links{
+      display:flex;
+      gap:50px;
+      align-items:center;
+    }
 
-.nav-links a{
-  color:white;
-  text-decoration:none;
-  font-size:15px;
-  font-weight:600;
-  letter-spacing:1px;
-  text-transform:uppercase;
-}
+    .nav-links a{
+      color:white;
+      text-decoration:none;
+      font-size:15px;
+      font-weight:600;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
 
-.nav-links a:hover{
-  color:var(--gold);
-}
+    .nav-links a:hover{
+      color:var(--gold);
+    }
+
+    .start-btn{
+      margin-left:50px;
+      padding:15px 35px;
+      border:1px solid var(--gold);
+      color:var(--gold);
+      background:transparent;
+      cursor:pointer;
+      font-weight:600;
+      letter-spacing:1px;
+      transition:0.3s;
+    }
+
+    .start-btn:hover{
+      background:var(--gold);
+      color:black;
+    }
 
     /* BUILDER */
     .builder{ max-width:1400px; margin:auto; padding:60px 40px; display:grid; grid-template-columns:1fr 1fr; gap:40px; }
@@ -126,29 +146,89 @@ nav{
     .footer-bottom{ border-top:1px solid #333; padding-top:30px; color:#777; text-align:center; }
 
     /* RESPONSIVE */
-    @media(max-width:1000px){
-      nav{ flex-direction:column; justify-content:center; padding:20px; gap:18px; }
-      .logo{ font-size:28px; }
-      .nav-links{ justify-content:center; gap:18px; }
-      .builder{ grid-template-columns:1fr; padding:40px 25px; }
-      .footer-grid{ grid-template-columns:1fr; gap:40px; text-align:center; }
-      .footer-desc{ max-width:100%; }
-      .form-row{ grid-template-columns:1fr; }
-    }
-    @media(max-width:600px){
-      nav{ padding:18px 15px; }
-      .logo{ font-size:26px; }
-      .nav-links{ gap:12px; }
-      .nav-links a{ font-size:11px; }
-      .builder{ padding:30px 15px; gap:25px; }
-      .panel-header{ font-size:18px; padding:18px 20px; }
-      .panel-body{ padding:20px; }
-      input, textarea{ padding:14px; font-size:14px; }
-      .generate-btn{ height:55px; font-size:14px; }
-      .r-name{ font-size:26px; }
-      .footer-logo{ font-size:26px; }
-      .form-row{ grid-template-columns:1fr; }
-    }
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+  nav{
+    flex-direction:column;
+    height:auto;
+    padding:15px;
+    gap:12px;
+  }
+
+  .logo{
+    margin-right:0;
+    font-size:30px;
+  }
+
+  .nav-links{
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .nav-links a{
+    font-size:12px;
+  }
+
+  .builder{
+    grid-template-columns:1fr;
+    padding:25px 15px;
+  }
+
+  .panel-body{
+    padding:20px;
+  }
+
+  .form-row{
+    grid-template-columns:1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+    gap:30px;
+  }
+}
+
+@media(max-width:600px){
+
+  .logo{
+    font-size:26px;
+  }
+
+  .nav-links{
+    gap:10px;
+  }
+
+  .nav-links a{
+    font-size:10px;
+  }
+
+  .generate-btn,
+  .download-btn,
+  .ats-check-btn{
+    height:50px;
+    font-size:13px;
+  }
+
+  .builder{
+    padding:15px 10px;
+  }
+
+  .panel-header{
+    font-size:18px;
+    padding:18px;
+  }
+
+  .resume-output{
+    padding:20px;
+  }
+}
+    
   </style>
 </head>
 <body>
